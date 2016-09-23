@@ -1,0 +1,21 @@
+{
+    "name": "JS 19-20",
+    "description": "Home work",
+    "main": "",
+    "authors": [
+        "SviatoslavK <kolodaslav@gmail.com>"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/SviatoslavK/-GoIT_JS_19-20",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "normalize.css": "*",
+        "jquery": "2.*"
+    }
+}

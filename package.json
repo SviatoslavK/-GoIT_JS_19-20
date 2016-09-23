@@ -1,0 +1,17 @@
+{
+  "name": "JS 19-20",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "imagemin-pngquant": "^5.0.0"
+  }
+}

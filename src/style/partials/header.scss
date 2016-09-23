@@ -1,0 +1,44 @@
+.header {
+	height: 112px;
+}
+.header__logo {
+	width: 203px;
+    margin-top: 36px;
+    .logo__img {
+	    width: 36px;
+        height: 36px;
+        display: inline-block;
+        .logo__img--squad {
+	        width: 18px;
+            height: 18px;
+            display: inline-block;
+            background-position: center center;
+            background-size: contain;
+        }
+        .logo__img--squad1 {
+	        background: url(../../img/background/logo--squad1.png);
+        }
+        .logo__img--squad2 {
+            background: url(../../img/background/logo--squad2.png);
+        }
+        .logo__img--squad3 {
+            background: url(../../img/background/logo--squad3.png);
+        }
+        .logo__img--squad4 {
+            background: url(../../img/background/logo--squad4.png);
+        }
+//        .logo__img--setting {
+//	        width: 32px;
+//            height: 32px;
+//            display: inline-block;
+//            background: url(../../img/icon/settings-copy.png);
+//            background-position: 16px 0;
+//            background-repeat: no-repeat;
+//        }
+    }
+    .logo__header {
+	    font-size: 30px;
+        line-height: 20px;
+        color: #434343;
+    }
+}
