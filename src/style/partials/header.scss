@@ -1,3 +1,5 @@
+@import "sprite";
+
 .header {
 	height: 112px;
 }
@@ -16,29 +18,46 @@
             background-size: contain;
         }
         .logo__img--squad1 {
-	        background: url(../../img/background/logo--squad1.png);
+            background: url(../img/background/squad1.png);
         }
         .logo__img--squad2 {
-            background: url(../../img/background/logo--squad2.png);
+            background: url(../img/background/squad2.png);
         }
         .logo__img--squad3 {
-            background: url(../../img/background/logo--squad3.png);
+            background: url(../img/background/squad3.png);
         }
         .logo__img--squad4 {
-            background: url(../../img/background/logo--squad4.png);
+            background: url(../img/background/squad4.png);
         }
-//        .logo__img--setting {
-//	        width: 32px;
-//            height: 32px;
-//            display: inline-block;
-//            background: url(../../img/icon/settings-copy.png);
-//            background-position: 16px 0;
-//            background-repeat: no-repeat;
-//        }
+        .logo__img--setting {
+
+        }
     }
     .logo__header {
 	    font-size: 30px;
         line-height: 20px;
         color: #434343;
+    }
+}
+.header__socials {
+	width: 145px;
+    float: right;
+    .socials__item {
+	    display: inline-block;
+    }
+    .socials__item--facebook {
+        @include sprite($facebook);
+    }
+    .socials__item--twitter {
+        @include sprite($twitter);
+    }
+    .socials__item--rss {
+        @include sprite($rss);
+    }
+    .socials__item--linkedin {
+        @include sprite($linkedin);
+    }
+    .socials__item--skype {
+        @include sprite($skype);
     }
 }
