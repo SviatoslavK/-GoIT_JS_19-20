@@ -1,63 +1,76 @@
 @import "sprite";
 
-.header {
-	height: 112px;
-}
-.header__logo {
-	width: 203px;
-    margin-top: 36px;
-    .logo__img {
-	    width: 36px;
-        height: 36px;
-        display: inline-block;
-        .logo__img--squad {
-	        width: 18px;
-            height: 18px;
-            display: inline-block;
-            background-position: center center;
-            background-size: contain;
-        }
-        .logo__img--squad1 {
-            background: url(../img/background/squad1.png);
-        }
-        .logo__img--squad2 {
-            background: url(../img/background/squad2.png);
-        }
-        .logo__img--squad3 {
-            background: url(../img/background/squad3.png);
-        }
-        .logo__img--squad4 {
-            background: url(../img/background/squad4.png);
-        }
-        .logo__img--setting {
 
-        }
-    }
-    .logo__header {
-	    font-size: 30px;
-        line-height: 20px;
-        color: #434343;
-    }
+.header__logo {
+	width: 210px;
+    display: inline-block;
+    padding-top: 36px;
+}
+.logo__img {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    background-color: #eee;
+}
+.logo__img--square {
+    position: absolute;
+	height: 18px;
+    width: 18px;
+    display: inline-block;
+}
+.logo__img--square1 {
+    background: url(../img/background/logo-square1.png);
+}
+.logo__img--square2 {
+    left: 18px;
+    background: url(../img/background/logo-square2.png);
+}
+.logo__img--square3 {
+    top: 18px;
+    background: url(../img/background/logo-square3.png);
+}
+.logo__img--square4 {
+    top: 18px;
+    left: 18px;
+    background: url(../img/background/logo-square4.png);
+}
+.logo__img--setting {
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    @include sprite ($settings-logo);
+}
+.logo__text {
+    position: relative;
+	display: inline-block;
+}
+.logo__header {
+    margin-top: 6px;
+    margin-bottom: 6px;
+	font: 500 30px / 16px Ubuntu;
+}
+.logo__subheader {
+    margin: 0;
+	font: 300 12px / 16px Ubuntu;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
 }
 .header__socials {
-	width: 145px;
+	width: 169px;
+    height: 16px;
     float: right;
-    .socials__item {
-	    display: inline-block;
-    }
-    .socials__item--facebook {
-        @include sprite($facebook);
-    }
-    .socials__item--twitter {
-        @include sprite($twitter);
-    }
-    .socials__item--rss {
-        @include sprite($rss);
-    }
-    .socials__item--linkedin {
-        @include sprite($linkedin);
-    }
-    .socials__item--skype {
-        @include sprite($skype);
+    margin-top: 48px;
+}
+.socials__link {
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    margin-left: 15px;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.2);
+    &:hover {
+        color: #0187f4;
+        cursor: pointer;
     }
 }
